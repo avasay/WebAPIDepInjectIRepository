@@ -1,0 +1,14 @@
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\bin\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.deps.json
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\bin\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.runtimeconfig.json
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\bin\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.runtimeconfig.dev.json
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\bin\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.dll
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\bin\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.pdb
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.csprojAssemblyReference.cache
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.csproj.CoreCompileInputs.cache
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.RazorAssemblyInfo.cache
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.RazorAssemblyInfo.cs
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.AssemblyInfoInputs.cache
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.AssemblyInfo.cs
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.RazorTargetAssemblyInfo.cache
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.dll
+C:\Users\alejandrio.vasay\source\lessons\WebAPI\WebAPIInMemoryDBSeededIRepository\obj\Debug\netcoreapp2.1\WebAPIInMemoryDBSeededIRepository.pdb
