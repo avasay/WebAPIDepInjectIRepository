@@ -29,6 +29,8 @@ namespace WebAPIInMemoryDBSeededIRepository
         {
             services.AddDbContext<EmployeeDBContext>(options => options.UseInMemoryDatabase("Employees"));
 
+            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

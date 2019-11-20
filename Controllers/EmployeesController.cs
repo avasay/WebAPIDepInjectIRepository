@@ -13,18 +13,21 @@ namespace WebAPIInMemoryDBSeededIRepository.Controllers
     [ApiController]
     public class EmployeesController : ControllerBase
     {
-        private readonly EmployeeDBContext _context;
+        private readonly IEmployeeRepository _service;
+        //private readonly EmployeeDBContext _context;
 
-        public EmployeesController(EmployeeDBContext context)
+        public EmployeesController(IEmployeeRepository srv /*EmployeeDBContext context*/)
         {
-            _context = context;
+            _service = srv;
+            //_context = context;
         }
 
         // GET: api/Employees
         [HttpGet]
         public IEnumerable<Employee> GetEmployees()
         {
-            return _context.Employees;
+            return _service.GetEmployee();
+            //return _context.Employees;
         }
 
         // GET: api/Employees/5
@@ -36,7 +39,8 @@ namespace WebAPIInMemoryDBSeededIRepository.Controllers
                 return BadRequest(ModelState);
             }
 
-            var employee = await _context.Employees.FindAsync(id);
+            var employee = await _service.GetEmployeeAsync(id);
+            // var employee = await _context.Employees.FindAsync(id);
 
             if (employee == null)
             {
@@ -46,6 +50,23 @@ namespace WebAPIInMemoryDBSeededIRepository.Controllers
             return Ok(employee);
         }
 
+        // POST: api/Employees
+        [HttpPost]
+        public async Task<IActionResult> PostEmployee([FromBody] Employee employee)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            await _service.AddEmployeeAsync(employee);
+
+            //_context.Employees.Add(employee);
+            //await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
+        }
+/*
         // PUT: api/Employees/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmployee([FromRoute] int id, [FromBody] Employee employee)
@@ -81,21 +102,6 @@ namespace WebAPIInMemoryDBSeededIRepository.Controllers
             return NoContent();
         }
 
-        // POST: api/Employees
-        [HttpPost]
-        public async Task<IActionResult> PostEmployee([FromBody] Employee employee)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            _context.Employees.Add(employee);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetEmployee", new { id = employee.Id }, employee);
-        }
-
         // DELETE: api/Employees/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee([FromRoute] int id)
@@ -121,5 +127,6 @@ namespace WebAPIInMemoryDBSeededIRepository.Controllers
         {
             return _context.Employees.Any(e => e.Id == id);
         }
+        */
     }
 }
